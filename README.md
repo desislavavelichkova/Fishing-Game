@@ -1,4 +1,4 @@
-# Fishing-Game
+# Fishing Game
 
 Create the next classes:
 - Pond - It should have the next attributes: capacity – list that contains all fish from the Pond in the current moment; state – ‘poor’, ‘normal’, ‘rich’. Pond is ‘poor’ if it’s capacity contains less then 5 fishes, ‘normal’, if capacity contains from 5 to 10 fishes, and ‘rich’ if it has more than 10 fishes. Pond can obtainFish() – it will be added to it’s capacity, and lostFish() – it will be taken from capacity. The Pond state changes automatically when it’s capacity reaches the appropriate value. Pond also allows showCapacity() and showState(). You can also add the optional attributes (as you wish).
