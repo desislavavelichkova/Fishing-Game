@@ -20,10 +20,8 @@ public class Main {
         System.out.println(" 4 - Show State of the pond.");
         System.out.print("Your option: ");
 
-        Scanner s = new Scanner(System.in);
         Scanner scanner = new Scanner(System.in);
-        String str = scanner.nextLine();
-        int command = Integer.parseInt(str);
+        int command = Integer.parseInt(scanner.nextLine());
 
         do {
 
@@ -35,8 +33,9 @@ public class Main {
                 System.out.println(" 1 - Carp");
                 System.out.println(" 2 - SheatFish");
                 System.out.print("Type of fish: ");
-                str = scanner.nextLine();
-                int typeOfFish = Integer.parseInt(str);
+
+                int typeOfFish = Integer.parseInt(scanner.nextLine());
+                
                 if (typeOfFish == 1) {
                     Fish currFish = new Carp(weight, "blue");
                     System.out.println();
@@ -50,7 +49,6 @@ public class Main {
                     continue;
                 }
                 System.out.println();
-                scanner = new Scanner(System.in);
             }
             else if (command == 2) {
                 count++;
@@ -75,8 +73,8 @@ public class Main {
                 System.out.println(" 3 - Show Capacity of the pond.");
                 System.out.println(" 4 - Show State of the pond.");
                 System.out.print("Your option: ");
-                str = scanner.nextLine();
-                command = Integer.parseInt(str);
+
+                command = Integer.parseInt(scanner.nextLine());
                 continue;
             }
             if (pond.getPower() > 10) {
@@ -92,8 +90,8 @@ public class Main {
             System.out.println(" 3 - Show Capacity of the pond.");
             System.out.println(" 4 - Show State of the pond.");
             System.out.print("Your option: ");
-            str = scanner.nextLine();
-            command = Integer.parseInt(str);
+
+            command = Integer.parseInt(scanner.nextLine());
 
         }while (pond.getPower() <= 10 || count <= 20);
 
